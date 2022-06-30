@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Resume Website: contact</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			li a {
+				padding: 0.5rem 1.5rem;
+				text-decoration: none;
+				color: gray;
+			}
+			li a:hover {
+				color: black;
+			}
+			.current {
+				color: black;
+				border-bottom: 1px black solid;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script>
+			$(function () {
+				$("nav ul li a").each(function () {
+					if ($(this).prop("href") == window.location.href) {
+						$(this).addClass("current");
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body class="" style="background-color: #efefef">
+		<nav
+			class="bg-white sticky-top shadow pb-2 d-flex align-items-end justify-content-evenly"
+			style="height: 5.5rem"
+		>
+			<h1 class="">Jirapat Promta</h1>
+			<ul
+				class="nav d-flex justify-content-end align-self-end pb-2"
+				style="width: 40rem"
+			>
+				<li class="nav-item">
+					<a class="" aria-current="page" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="" href="/experience.html">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="" href="/contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<main class="h-100" style="width: 80vw; margin: auto">
+			<div class="mt-5">
+				<span class="fs-1 fw-bold"> Contact </span>
+			</div>
+			<hr />
+			<div
+				class="bg-white shadow d-flex"
+				style="height: 25rem; width: 100%"
+			>
+				<img
+					src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t1.6435-9/61139431_436960643801854_4091513758885609472_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=19026a&_nc_ohc=5cTpafPFxu8AX94KSci&_nc_ht=scontent.fcnx3-1.fna&oh=00_AT-JNy_Ph6lgi0H_mOJ0R9VItpgjclHokj0F5S4fMSAZRg&oe=62E55E9C"
+					class="h-100 img-fluid"
+				/>
+				<div class="d-flex flex-column h-100 w-100 m-5">
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Name</p>
+						</div>
+						<div class="w-75">
+							<p>Jirapat Promta</p>
+						</div>
+					</div>
+
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Nickname</p>
+						</div>
+						<div class="w-75">
+							<p>Jame</p>
+						</div>
+					</div>
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Address</p>
+						</div>
+						<div class="w-75">
+							<p>
+								(301) 865-9423 12203 Fingerboard Rd Monrovia,
+								Maryland(MD), 21770
+							</p>
+						</div>
+					</div>
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Facebook</p>
+						</div>
+						<div class="w-75">
+							<p>
+								<a
+									href="https://www.facebook.com/jm.jirapat.5/"
+									target="_blank"
+									class="m-0 p-0"
+									>https://www.facebook.com/jm.jirapat.5/</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Email</p>
+						</div>
+						<div class="w-75">
+							<p>
+								<a
+									href="mailto: jirapat_promta@cmu.ac.th"
+									target="_blank"
+									class="m-0 p-0"
+									>jirapat_promta@cmu.ac.th</a
+								>
+							</p>
+						</div>
+					</div>
+					<div class="d-flex w-100">
+						<div class="fw-semibold w-25">
+							<p>Phone</p>
+						</div>
+						<div class="w-75">
+							<p>+6680-359-1651</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
