@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+.current {
+	color: black !important;
+	border-top: 1px black solid;
+}
+
+.nav-custom a {
+	text-decoration: none;
+	color: gray;
+}
+.nav-custom a:hover {
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover {
+	color: white;
+}
+
+.contact a:hover {
+	color: black;
+}
+
+main div a {
+	padding-top: 1rem;
+}
+
+main {
+	margin-top: 1rem;
+	border-top: 1px solid rgba(160, 160, 160, 0.5);
+}
+
+.nav-custom {
+	padding-top: 1rem;
+}

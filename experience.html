@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Resume Website : experience</title>
+		<title>My Resume Website</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -22,24 +22,11 @@
 			href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap"
 			rel="stylesheet"
 		/>
-		<style>
-			a {
-				padding: 0.5rem 1.5rem;
-				text-decoration: none;
-				color: gray;
-			}
-			a:hover {
-				color: black;
-			}
-			.current {
-				color: black;
-				border-bottom: 1px black solid;
-			}
-		</style>
+		<link rel="stylesheet" href="./index.css" />
 		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 		<script>
 			$(function () {
-				$("nav ul li a").each(function () {
+				$("main div a").each(function () {
 					if ($(this).prop("href") == window.location.href) {
 						$(this).addClass("current");
 					}
@@ -48,109 +35,302 @@
 		</script>
 	</head>
 
-	<body class="" style="background-color: #efefef">
+	<body class="bg-light">
 		<nav
-			class="bg-white sticky-top shadow pb-2 d-flex align-items-end justify-content-evenly"
-			style="height: 5.5rem"
+			class="bg-white w-100 sticky-top d-flex border-bottom align-items-center justify-content-center"
+			style="height: 3.7rem"
 		>
-			<h1 class="">Jirapat Promta</h1>
-			<ul
-				class="nav d-flex justify-content-end align-self-end pb-2"
-				style="width: 40rem"
-			>
-				<li class="nav-item">
-					<a class="" aria-current="page" href="./">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="" href="./experience.html">Experience</a>
-				</li>
-				<li class="nav-item">
-					<a class="" href="./contact.html">Contact</a>
-				</li>
-			</ul>
+			<div class="w-100 px-4" style="max-width: 56rem">
+				<h1
+					class="fs-4 tracking-tight"
+					style="
+						font-family: 'Sarabun', sans-serif;
+						letter-spacing: -0.05em;
+					"
+				>
+					𝓙𝓲𝓻𝓪𝓹𝓪𝓽
+				</h1>
+			</div>
 		</nav>
-		<main class="h-100" style="width: 80vw; margin: auto">
-			<div class="mt-5">
-				<span class="fs-1 fw-bold"> Experience </span>
+		<div class="d-flex flex-column align-items-center px-4">
+			<div class="w-100 d-flex mt-4" style="max-width: 56rem">
+				<div class="d-flex w-100">
+					<div
+						style="width: 30%"
+						class="d-flex justify-content-center"
+					>
+						<div class="" style="width: 10.5rem">
+							<img
+								src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t1.6435-9/129227182_897125157785398_130849267060199300_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=5-9VDXzLbDcAX-L9Z63&tn=OiDVYfxwcTQgicpL&_nc_ht=scontent.fcnx3-1.fna&oh=00_AT8Lk1dMzBNI3Qhs39zQJ9PfG7qwg78D9NNmTCFPrKXt1Q&oe=62E12A7A"
+								class="rounded-circle img-fluid"
+								style="object-fit: cover"
+							/>
+						</div>
+					</div>
+					<div style="width: 70%" class="ps-5">
+						<div>
+							<span class="fw-lighter fs-2">Jirapat Promta</span>
+						</div>
+						<div class="mt-3">
+							<div
+								class="fs-6 d-inline"
+								style="margin-right: 2.5rem"
+							>
+								<span class="fw-semibold">7</span>
+								<span>skills</span>
+							</div>
+							<div
+								class="fs-6 d-inline"
+								style="margin-right: 2.5rem"
+							>
+								<span class="fw-semibold">3</span>
+								<span>projects</span>
+							</div>
+							<div
+								class="fs-6 d-inline"
+								style="margin-right: 2.5rem"
+							>
+								<span class="fw-semibold">1</span>
+								<span>cats</span>
+							</div>
+						</div>
+						<div class="mt-3">
+							<span class="fw-semibold fs-6">#jm_jirapat</span>
+						</div>
+						<div class="mt-3">
+							<p
+								class="fw-lighter fs-6"
+								style="
+									text-indent: 0rem;
+									font-family: 'Sarabun', sans-serif;
+								"
+							>
+								สวัสดี, ผมชื่อ จิรพัฒน์ พรหมทา.
+								ผมกำลังศึกษาที่มหาลัยเชียงใหม่ คณะวิศวกรรมศาสตร์
+								สาขาคอมพิวเตอร์.
+								ผมชอบเขียนโปรแกรมกำลังค้นหาสายโปรแกรมที่ชอบ ณ
+								ตอนนี้กำลังศึกษาเกี่ยวกับ Frontend และ Backend.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<hr />
-			<div
-				class="h-100 d-flex align-items-center justify-content-between mt-5"
+
+			<main
+				class="d-flex w-100 justify-content-center px-0 pb-4"
+				style="max-width: 56rem"
 			>
-				<div class="card" style="width: 25%">
-					<img
-						class="card-img-top"
-						src="https://www.npsrobot.com/wp-content/uploads/2018/05/scratchdl.jpg"
-						alt="Card image cap"
-						style="height: 15rem; object-fit: fill"
-					/>
-					<div class="card-body">
-						<h5 class="card-title">Scratch Project</h5>
-						<p
-							class="card-text"
-							style="font-family: 'Sarabun', sans-serif"
+				<div class="w-100">
+					<div
+						class="fw-semibold w-100 d-flex justify-content-center"
+						style="font-size: 0.8rem"
+					>
+						<div
+							style="width: 36%"
+							class="d-flex justify-content-between"
 						>
-							โปรเจคนี้เกี่ยวกับเกมส์ยานอวกาศยิงอุกบาตหรือยานเอเลี่ยน
-							ซึ่งทำโดยกลุ่มผม ผ่านเว็ป Scratch
-						</p>
-						<a
-							href="https://scratch.mit.edu/projects/558101633/"
-							class="btn btn-primary"
-							>Let's see</a
+							<div class="nav-custom">
+								<a href="./"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-card-checklist me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"
+										/>
+										<path
+											d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"
+										/></svg
+									>SKILLS</a
+								>
+							</div>
+							<div class="nav-custom">
+								<a href="./experience.html"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-display me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"
+										/></svg
+									>PROJECTS</a
+								>
+							</div>
+							<div class="nav-custom">
+								<a href="./contact.html"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-person-lines-fill me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+										/></svg
+									>CONTACT</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="mt-3 w-100 d-flex flex-wrap px-4">
+						<div
+							class="bg-white border border-white position-relative"
+							style="width: 33%; height: 16rem"
 						>
+							<a
+								href="https://scratch.mit.edu/projects/558101633/"
+								target="_blank"
+							>
+								<img
+									src="https://www.npsrobot.com/wp-content/uploads/2018/05/scratchdl.jpg"
+									class="w-100"
+								/>
+								<div
+									class="position-absolute top-0"
+									style="right: 0.4rem"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right shadow"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+										/>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div
+							class="border border-white bg-white position-relative"
+							style="width: 33%; height: 16rem"
+						>
+							<a
+								href="https://teachablemachine.withgoogle.com/"
+								target="_blank"
+							>
+								<img
+									src="https://i.ytimg.com/vi/T2qQGqZxkD0/maxresdefault.jpg"
+									class="w-100 h-100"
+									style="object-fit: scale-down"
+								/>
+								<div
+									class="position-absolute top-0"
+									style="right: 0.4rem"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right shadow"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+										/>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white border border-white position-relative"
+							style="width: 33%; height: 16rem"
+						>
+							<a
+								href="https://github.com/JMjirapat/SCT-calculator"
+								target="_blank"
+							>
+								<img
+									src="https://images.idgesg.net/images/article/2019/03/c-plus-plus_code-100790020-large.jpg?auto=webp&quality=85,70"
+									class="w-100 h-100"
+									style="object-fit: cover"
+								/>
+								<div
+									class="position-absolute top-0"
+									style="right: 0.4rem"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right shadow"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+										/>
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-black border border-white position-relative"
+							style="width: 33%; height: 16rem"
+						>
+							<a href="#">
+								<div
+									class="text-white d-flex justify-content-center align-items-center fs-1 w-100 h-100"
+								>
+									Sample
+								</div>
+
+								<div
+									class="position-absolute top-0"
+									style="right: 0.4rem"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right shadow"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+										/>
+									</svg>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
-				<div class="card" style="width: 25%">
-					<img
-						class="card-img-top"
-						src="https://i.ytimg.com/vi/T2qQGqZxkD0/maxresdefault.jpg"
-						alt="Card image cap"
-						style="height: 15rem; object-fit: fill"
-					/>
-					<div class="card-body">
-						<h5 class="card-title">
-							Scratch with machine learning
-						</h5>
-						<p
-							class="card-text"
-							style="font-family: 'Sarabun', sans-serif"
-						>
-							ประสบการณ์นี้ต่อยอดจากโปรเจคเกมส์ Scratch
-							โดยได้นำมาประยุกต์กับ machine learning ผ่าน
-							teachablemachine
-							ในการควบคุมทิศทางโดยการแสดงท่าทางผ่านกล้อง
-						</p>
-						<a
-							href="https://teachablemachine.withgoogle.com/"
-							class="btn btn-primary"
-							>Let's see</a
-						>
-					</div>
-				</div>
-				<div class="card" style="width: 25%">
-					<img
-						class="card-img-top"
-						src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png"
-						alt="Card image cap"
-						style="height: 15rem; object-fit: contain"
-					/>
-					<div class="card-body">
-						<h5 class="card-title">C++ projecct</h5>
-						<p
-							class="card-text"
-							style="font-family: 'Sarabun', sans-serif"
-						>
-							โปรเจคนี้ได้นำความรู้ C++
-							ในห้องเรียนนำมาทำโปรแกรมเครื่องคิดเลขแบบ CLI
-						</p>
-						<a
-							href="https://github.com/JMjirapat/SCT-calculator"
-							class="btn btn-primary"
-							>Let's see</a
-						>
-					</div>
-				</div>
-			</div>
-		</main>
+			</main>
+		</div>
 	</body>
 </html>
